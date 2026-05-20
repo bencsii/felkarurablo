@@ -16,7 +16,8 @@ namespace felkarurablo
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        Random random = new Random();
+		public MainWindow()
         {
             InitializeComponent();
             

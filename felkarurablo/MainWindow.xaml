@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:felkarurablo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+	<Grid>
+		<Image HorizontalAlignment="Left" Height="152" Margin="105,128,0,0" VerticalAlignment="Top" Width="167" Source="/3.jfif"/>
+		<Image HorizontalAlignment="Left" Height="152" Margin="312,131,0,0" VerticalAlignment="Top" Width="167" Source="/1.jfif"/>
+		<Image HorizontalAlignment="Left" Height="96" Margin="526,127,0,0" VerticalAlignment="Top" Width="167" Source="/2.jfif"/>
+		<Button Content="Spin" HorizontalAlignment="Left" Margin="287,322,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.96,0.073" Height="60" Width="209"/>
+		<Label Content="Credit:0 " HorizontalAlignment="Left" Margin="12,21,0,0" VerticalAlignment="Top" Height="52" Width="150" FontSize="36"/>
 
-    </Grid>
+	</Grid>
 </Window>
