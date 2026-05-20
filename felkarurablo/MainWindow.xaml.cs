@@ -34,25 +34,36 @@ namespace felkarurablo
 		public MainWindow()
         {
             InitializeComponent();
-            
 
-        
-        }
+			lb_balance.Content = $"Balance: {balance.ToString()}";
+
+		}
+		
 
         private void Spin()
         {
-			int index = random.Next(symbols.Count);
+			int index1 = random.Next(symbols.Count);
+			int index2 = random.Next(symbols.Count);
+			int index3 = random.Next(symbols.Count);
 
-			string selectedImage = symbols[index];
 
-			slotImage1.Source = new BitmapImage(new Uri(selectedImage, UriKind.Relative));
-			slotImage2.Source = new BitmapImage(new Uri(selectedImage, UriKind.Relative));
-			slotImage3.Source = new BitmapImage(new Uri(selectedImage, UriKind.Relative));
+			string selectedImage1 = symbols[index1];
+			string selectedImage2 = symbols[index2];
+			string selectedImage3 = symbols[index3];
+
+
+			slotImage1.Source = new BitmapImage(new Uri(selectedImage1, UriKind.Relative));
+			slotImage2.Source = new BitmapImage(new Uri(selectedImage2, UriKind.Relative));
+			slotImage3.Source = new BitmapImage(new Uri(selectedImage3, UriKind.Relative));
 		}
 
 		private void spinButton_Click(object sender, RoutedEventArgs e)
 		{
 			Spin();
+			balance -= spinCost;
+			lb_balance.Content = $"Balance: {balance.ToString()}";
 		}
+
+		
 	}
 }
