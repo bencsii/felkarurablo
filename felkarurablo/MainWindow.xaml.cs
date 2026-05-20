@@ -17,6 +17,20 @@ namespace felkarurablo
     public partial class MainWindow : Window
     {
         Random random = new Random();
+
+
+        int balance = 100;
+        int spinCost = 10;
+
+		List<string> symbols = new List<string>()
+		{
+			"kep1.jfif",
+			"kep2.jfif",
+			"kep3.jfif",
+			
+		};
+
+
 		public MainWindow()
         {
             InitializeComponent();
@@ -24,5 +38,21 @@ namespace felkarurablo
 
         
         }
-    }
+
+        private void Spin()
+        {
+			int index = random.Next(symbols.Count);
+
+			string selectedImage = symbols[index];
+
+			slotImage1.Source = new BitmapImage(new Uri(selectedImage, UriKind.Relative));
+			slotImage2.Source = new BitmapImage(new Uri(selectedImage, UriKind.Relative));
+			slotImage3.Source = new BitmapImage(new Uri(selectedImage, UriKind.Relative));
+		}
+
+		private void spinButton_Click(object sender, RoutedEventArgs e)
+		{
+			Spin();
+		}
+	}
 }

@@ -9,17 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="1.jfif" />
-    <None Remove="2.jfif" />
-    <None Remove="3.jfif" />
     <None Remove="Képernyőkép 2026-03-27 125427.png" />
     <None Remove="letöltés.jfif" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="1.jfif" />
-    <Resource Include="2.jfif" />
-    <Resource Include="3.jfif" />
+    <Resource Include="kep1.jfif" />
+    <Resource Include="kep2.jfif" />
+    <Resource Include="kep3.jfif" />
     <Resource Include="Képernyőkép 2026-03-27 125427.png" />
     <Resource Include="letöltés.jfif" />
   </ItemGroup>
